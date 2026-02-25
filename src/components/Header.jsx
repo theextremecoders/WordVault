@@ -72,7 +72,7 @@ export function Header({ onWordSelect }) {
         </button>
 
         {/* Mobile menu */}
-        <div className="dropdown dropdown-end sm:hidden" popover>
+        <div className="dropdown dropdown-end sm:hidden" popover={true}>
           <button tabIndex={0} className="btn btn-ghost btn-sm">
             <Menu size={18} />
           </button>
