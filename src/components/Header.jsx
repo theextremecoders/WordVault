@@ -27,9 +27,15 @@ export function Header({ onWordSelect }) {
           <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center shadow">
             <span className="text-primary-content font-black text-sm">W</span>
           </div>
-          <span className="font-extrabold text-xl tracking-tight hidden sm:inline">
-            Word<span className="text-primary">Vault</span>
-          </span>
+          {/* site name always visible, even on small screens */}
+          <div className="flex flex-col leading-tight">
+            <span className="font-extrabold text-xl tracking-tight">
+              Word<span className="text-primary">Vault</span>
+            </span>
+            <span className="text-[0.65rem] text-base-content/60 italic tracking-tight -mt-0.5">
+              your personal dictionary
+            </span>
+          </div>
         </a>
       </div>
 

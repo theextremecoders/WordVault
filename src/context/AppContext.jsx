@@ -5,8 +5,9 @@ import { THEMES } from '../utils/helpers';
 const AppContext = createContext(null);
 
 export function AppProvider({ children }) {
-  // Theme
-  const [theme, setTheme] = useLocalStorage('wv-theme', 'dark');
+  // Theme (default to Bumblebee until the user chooses another)
+  // Stored in localStorage key 'wv-theme'. The hook falls back to 'bumblebee'
+  const [theme, setTheme] = useLocalStorage('wv-theme', 'bumblebee');
 
   // Favorites: { word, phonetic, shortDef, savedAt }
   const [favorites, setFavorites] = useLocalStorage('wv-favorites', []);

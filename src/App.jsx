@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 import { Toaster } from 'react-hot-toast';
-import { Globe, Mail, Sparkles, Bolt, Check, User, Volume2, Search, Download, ShieldCheck, Users, Star, ArrowRight, X } from 'lucide-react';
+import { Globe, Mail, Sparkles, Laptop, Bolt, Check, User, Volume2, Search, Download, ShieldCheck, Users, Star, ArrowRight, X } from 'lucide-react';
 import { useApp } from './context/AppContext';
 import { useDictionary } from './hooks/useDictionary';
 import { Header } from './components/Header';
@@ -131,8 +131,8 @@ export default function App() {
         <div className="container mx-auto px-4 py-3 max-w-6xl">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-2">
             <div className="flex items-center gap-3">
-              <div className="relative flex items-center justify-center w-9 h-9 rounded-xl bg-gradient-to-br from-primary/30 to-secondary/30 text-primary ring-1 ring-primary/20 shadow-sm">
-                <Sparkles size={16} />
+              <div className="relative flex items-center justify-center w-9 h-9 rounded-xl bg-gradient-to-br from-primary to-secondary text-primary-content ring-1 ring-primary/30 shadow-md">
+                <Laptop size={16} />
                 <span className="absolute -top-1 -right-1 w-2.5 h-2.5 bg-success rounded-full ring-2 ring-base-200" />
               </div>
               <div className="leading-tight">
@@ -153,7 +153,7 @@ export default function App() {
           </div>
           <p className="mt-2 text-center text-xs text-base-content/35">
             WordVault &mdash; Powered by{' '}
-            <a href="https://dictionaryapi.dev" target="_blank" rel="noopener noreferrer" className="link link-primary opacity-60">Free Dictionary API</a>
+            <a href="https://dictionaryapi.dev" target="_blank" rel="noopener noreferrer" className="link link-primary opacity-80 hover:opacity-100">Free Dictionary API</a>
             {' '}· Built with React, Vite &amp; DaisyUI
           </p>
         </div>
